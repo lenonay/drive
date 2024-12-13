@@ -91,6 +91,19 @@ header {
 
 aside {
     grid-area: aside;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 10px;
+
+    & .upload_btn {
+        color: aliceblue;
+        transition: all 300ms ease;
+
+        &:hover {
+            color: var(--color4);
+            filter: drop-shadow(0 0 8px var(--color5))
+        }
+    }
 }
 
 main {
