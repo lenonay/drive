@@ -1,0 +1,18 @@
+:root {
+    --color1: #2f3e46;
+    --color2: #354f52;
+    --color3: #52796f;
+    --color4: #84a98c;
+    --color5: #cad2c5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #212121;
+    color: aliceblue;
+}
