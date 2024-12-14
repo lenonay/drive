@@ -108,4 +108,32 @@ aside {
 
 main {
     grid-area: main;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    & .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 160px;
+        height: 200px;
+        padding: 10px;
+        border-radius: 20px;
+        background: var(--color2);
+        box-shadow: 0 0 10px 1px #00000030;
+
+        & img{
+            width: 100%;
+            max-height: 120px;
+            object-fit: contain;
+        }
+    }
 }

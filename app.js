@@ -2,10 +2,12 @@ import e, { json } from "express";
 import { INT, PORT } from "./config.js";
 
 import { FilesRouter } from "./routes/files.js";
+import cookieParser from "cookie-parser";
 
 const app = e();
 //  Midleware
 app.use(json());
+app.use(cookieParser());
 
 // Rutas estáticas
 app.use("/public", e.static("./public"));

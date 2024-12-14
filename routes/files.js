@@ -16,10 +16,11 @@ const storage = multer.diskStorage({
 });
 
 const Upload = multer({ storage });
-
 // Subida de un archivo
-FilesRouter.post("/", Upload.single("upload"));
+FilesRouter.post("/", Upload.single("upload"), FileController.Upload);
 
+// Recuperamos el contenido de la ruta
+FilesRouter.get("/", FileController.GetPathContent)
 
 // Gestionar los errores de subida de archivos
 FilesRouter.use((err, req, res, next) => {
